@@ -220,7 +220,7 @@ Want to contribute or customize the CLI? Here's how to run it locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/nibedanpati/create-expo-starter.git
+git clone https://github.com/Heisenberg300604/create-expo-starter.git
 cd create-expo-starter
 
 # Install dependencies
@@ -317,8 +317,8 @@ If this project helped you, please consider giving it a star! It helps others di
 
 <div align="center">
 
-**Made with ❤️ by [Nibedan Pati](https://github.com/nibedanpati)**
+**Made with ❤️ by [Nibedan](https://github.com/Heisenberg300604)**
 
-[Report Bug](https://github.com/nibedanpati/create-expo-starter/issues) • [Request Feature](https://github.com/nibedanpati/create-expo-starter/issues)
+[Report Bug](https://github.com/Heisenberg300604/create-expo-starter/issues) • [Request Feature](https://github.com/Heisenberg300604/create-expo-starter/issues)
 
 </div>
