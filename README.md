@@ -54,14 +54,24 @@ Every React Native developer knows the pain:
 ### Create Your App
 
 ```bash
-# Using npx (recommended)
-px init-expo-app my-app
+# Using npx (recommended - no installation needed)
+npx init-expo-app my-app
 
 # Navigate to your app
 cd my-app
 
 # Start developing
 npx expo start
+```
+
+### Alternative: Install Globally
+
+```bash
+# Install globally
+npm install -g init-expo-app
+
+# Use it anywhere
+init-expo-app my-app
 ```
 
 ### Interactive Setup
