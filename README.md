@@ -20,7 +20,7 @@
 Think of it as **create-t3-app but for mobile development**.
 
 ```bash
-px init-expo-app my-app
+npx init-expo-app my-app
 ```
 
 That's it. One command to get a production-ready mobile app template.
