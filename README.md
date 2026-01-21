@@ -1,10 +1,10 @@
 <div align="center">
 
-# Create Expo Starter
+# Init Expo App
 
 **The fastest way to bootstrap production-ready Expo React Native apps**
 
-[![npm version](https://img.shields.io/npm/v/create-expo-starter.svg?style=flat-square)](https://www.npmjs.com/package/create-expo-starter)
+[![npm version](https://img.shields.io/npm/v/init-expo-app.svg?style=flat-square)](https://www.npmjs.com/package/init-expo-app)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 [Quick Start](#-quick-start) • [Features](#-features) • [What You Get](#-what-you-get) • [Tech Stack](#-tech-stack) • [Contributing](#-contributing)
@@ -13,14 +13,14 @@
 
 ---
 
-## What is Create Expo Starter?
+## What is Init Expo App?
 
-**Create Expo Starter** is a CLI tool that generates fully-configured Expo React Native applications with a modern tech stack in seconds. Stop wasting hours setting up NativeWind, state management, API layers, and navigation—start building your app immediately.
+**Init Expo App** is a CLI tool that generates fully-configured Expo React Native applications with a modern tech stack in seconds. Stop wasting hours setting up NativeWind, state management, API layers, and navigation—start building your app immediately.
 
 Think of it as **create-t3-app but for mobile development**.
 
 ```bash
-npx create-expo-starter my-app
+px init-expo-app my-app
 ```
 
 That's it. One command to get a production-ready mobile app template.
@@ -31,7 +31,7 @@ That's it. One command to get a production-ready mobile app template.
 
 Every React Native developer knows the pain:
 
-| ❌ Without Create Expo Starter | ✅ With Create Expo Starter |
+| ❌ Without Init Expo App | ✅ With Init Expo App |
 |-------------------------------|----------------------------|
 | 2-4 hours setting up a new project | **30 seconds** to get started |
 | Manually configuring NativeWind, Tailwind | Pre-configured and working |
@@ -55,7 +55,7 @@ Every React Native developer knows the pain:
 
 ```bash
 # Using npx (recommended)
-npx create-expo-starter my-app
+px init-expo-app my-app
 
 # Navigate to your app
 cd my-app
@@ -220,8 +220,8 @@ Want to contribute or customize the CLI? Here's how to run it locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Heisenberg300604/create-expo-starter.git
-cd create-expo-starter
+git clone https://github.com/Heisenberg300604/init-expo-app.git
+cd init-expo-app
 
 # Install dependencies
 npm install
@@ -230,15 +230,15 @@ npm install
 npm link
 
 # Now you can use it locally
-create-expo-starter test-app
+init-expo-app test-app
 ```
 
 ### Project Structure (CLI Source)
 
 ```
-create-expo-starter/
+init-expo-app/
 ├── bin/
-│   └── create-expo-starter.js    # CLI entry point
+│   └── init-expo-app.js    # CLI entry point
 │
 ├── src/
 │   ├── index.js                  # Main orchestrator
@@ -278,7 +278,7 @@ We love contributions! Here's how you can help:
 # 1. Fork the repository
 
 # 2. Clone your fork
-git clone https://github.com/YOUR_USERNAME/create-expo-starter.git
+git clone https://github.com/YOUR_USERNAME/init-expo-app.git
 
 # 3. Create a feature branch
 git checkout -b feature/amazing-feature
@@ -287,7 +287,7 @@ git checkout -b feature/amazing-feature
 
 # 5. Test locally
 npm link
-create-expo-starter test-app
+init-expo-app test-app
 
 # 6. Commit your changes
 git commit -m "feat: add amazing feature"
@@ -319,6 +319,6 @@ If this project helped you, please consider giving it a star! It helps others di
 
 **Made with ❤️ by [Nibedan](https://github.com/Heisenberg300604)**
 
-[Report Bug](https://github.com/Heisenberg300604/create-expo-starter/issues) • [Request Feature](https://github.com/Heisenberg300604/create-expo-starter/issues)
+[Report Bug](https://github.com/Heisenberg300604/init-expo-app/issues) • [Request Feature](https://github.com/Heisenberg300604/init-expo-app/issues)
 
 </div>
