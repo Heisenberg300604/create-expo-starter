@@ -1,5 +1,5 @@
 ---
-import { Github, Package } from "lucide-react";
+import { Github } from "lucide-react";
 ---
 
 <footer class="py-8 border-t border-border">
@@ -8,14 +8,11 @@ import { Github, Package } from "lucide-react";
             class="flex flex-col sm:flex-row items-center justify-between gap-4"
         >
             <div class="flex items-center gap-2">
-                <div
-                    class="w-5 h-5 bg-foreground rounded-sm flex items-center justify-center"
-                >
-                    <span
-                        class="text-background font-mono text-[10px] font-bold"
-                        >ie</span
-                    >
-                </div>
+                <img
+                    src="/npm-logo.png"
+                    alt="NPM Logo"
+                    class="w-6 h-6 rounded"
+                />
                 <span class="text-sm text-muted-foreground">
                     init-expo-app
                 </span>
@@ -23,26 +20,48 @@ import { Github, Package } from "lucide-react";
 
             <div class="flex items-center gap-4">
                 <a
-                    href="https://github.com"
+                    href="https://github.com/Heisenberg300604/init-expo-app"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-muted-foreground hover:text-foreground transition-colors"
                     aria-label="GitHub"
                 >
-                    <Github className="w-4 h-4" />
+                    <Github className="w-5 h-5" />
                 </a>
                 <a
-                    href="https://npmjs.com"
+                    href="https://www.npmjs.com/package/init-expo-app"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-muted-foreground hover:text-foreground transition-colors"
                     aria-label="NPM"
                 >
-                    <Package className="w-4 h-4" />
+                    <svg
+                        viewBox="0 0 780 250"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5"
+                    >
+                        <path d="M240 0H540V250H240V0Z" fill="currentColor"
+                        ></path>
+                        <path d="M0 0H240V250H0V0Z" fill="currentColor"></path>
+                        <path d="M540 0H780V250H540V0Z" fill="currentColor"
+                        ></path>
+                        <path
+                            d="M49 49H191V201H141V99H99V201H49V49Z"
+                            fill="var(--background)"></path>
+                        <path
+                            d="M290 49H490V201H440V99H390V201H340V99H290V49Z"
+                            fill="var(--background)"></path>
+                        <path
+                            d="M589 49H730V99H679V201H630V99H589V49Z"
+                            fill="var(--background)"></path>
+                    </svg>
                 </a>
             </div>
 
-            <p class="text-xs text-muted-foreground">Built with Astro</p>
+            <p class="text-xs text-muted-foreground">
+                Made with ❤️ by Nibedan AKA Heisenberg
+            </p>
         </div>
     </div>
 </footer>

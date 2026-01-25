@@ -4,10 +4,10 @@ import { EnhancedTerminal } from "../react/EnhancedTerminal";
 import { EnhancedPhoneMockup } from "../react/EnhancedPhoneMockup";
 ---
 
-<section class="min-h-screen flex items-center justify-center pt-20 pb-20">
+<section class="min-h-screen flex items-center justify-center pt-24 pb-16 px-4">
     <div class="section-container">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            <div class="text-center lg:text-left order-2 lg:order-1">
                 <div
                     class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-6"
                 >
@@ -23,34 +23,40 @@ import { EnhancedPhoneMockup } from "../react/EnhancedPhoneMockup";
                 </div>
 
                 <h1
-                    class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4"
+                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4"
                 >
                     Init Expo App
                 </h1>
 
-                <p class="text-lg sm:text-xl text-muted-foreground mb-2">
+                <p
+                    class="text-base sm:text-lg lg:text-xl text-muted-foreground mb-2 max-w-lg mx-auto lg:mx-0"
+                >
                     The fastest way to bootstrap production-ready Expo React
                     Native apps.
                 </p>
 
-                <p class="text-muted-foreground mb-8">
+                <p
+                    class="text-sm sm:text-base text-muted-foreground mb-6 lg:mb-8 max-w-md mx-auto lg:mx-0"
+                >
                     Stop wasting hours on setup. Start building features in
                     minutes.
                 </p>
 
-                <div class="space-y-4 mb-8">
+                <div class="space-y-4 mb-6 lg:mb-8 max-w-md mx-auto lg:mx-0">
                     <EnhancedTerminal
                         command="npx init-expo-app my-app"
                         client:visible
                     />
                 </div>
 
-                <div class="flex flex-wrap items-center gap-3">
+                <div
+                    class="flex flex-wrap items-center justify-center lg:justify-start gap-3"
+                >
                     <a
-                        href="https://github.com/rupali-codes/init-expo-app"
+                        href="https://github.com/Heisenberg300604/init-expo-app"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-medium hover:opacity-90 transition-opacity"
+                        class="inline-flex items-center gap-2 px-4 py-2.5 bg-primary text-primary-foreground rounded-md text-sm font-medium hover:opacity-90 transition-opacity"
                     >
                         <Github className="w-4 h-4" />
                         View on GitHub
@@ -59,7 +65,7 @@ import { EnhancedPhoneMockup } from "../react/EnhancedPhoneMockup";
                         href="https://www.npmjs.com/package/init-expo-app"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-flex items-center gap-2 px-4 py-2 border border-border rounded-md text-sm font-medium hover:bg-secondary transition-colors"
+                        class="inline-flex items-center gap-2 px-4 py-2.5 border border-border rounded-md text-sm font-medium hover:bg-secondary transition-colors"
                     >
                         <Package className="w-4 h-4" />
                         NPM Package
@@ -67,7 +73,7 @@ import { EnhancedPhoneMockup } from "../react/EnhancedPhoneMockup";
                 </div>
             </div>
 
-            <div class="hidden lg:block">
+            <div class="flex justify-center order-1 lg:order-2">
                 <EnhancedPhoneMockup client:visible />
             </div>
         </div>

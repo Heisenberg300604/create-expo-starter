@@ -12,27 +12,60 @@ import { TerminalCommand } from "../react/TerminalCommand";
                 </p>
             </div>
 
-            <div class="space-y-4">
-                <div>
-                    <p class="text-sm font-medium mb-2">1. Create a new app</p>
-                    <TerminalCommand
-                        command="npx init-expo-app my-app"
-                        client:idle
-                    />
+            <div
+                class="w-full max-w-2xl mx-auto border border-border bg-[#0c0c0c] rounded-xl overflow-hidden shadow-2xl"
+            >
+                <div
+                    class="border-b border-white/10 bg-[#1a1a1a] p-4 flex items-center"
+                >
+                    <div class="flex gap-2">
+                        <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+                        <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+                        <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+                    </div>
+                    <div class="ml-4 text-xs text-muted-foreground font-mono">
+                        bash — 80x24
+                    </div>
                 </div>
+                <div class="p-6 space-y-8 font-mono text-sm">
+                    <div>
+                        <div
+                            class="flex items-center gap-2 text-muted-foreground mb-2"
+                        >
+                            <span class="text-green-500">➜</span>
+                            <span>~</span>
+                            <span>Create a new app</span>
+                        </div>
+                        <TerminalCommand
+                            command="npx init-expo-app my-app"
+                            client:visible
+                        />
+                    </div>
 
-                <div>
-                    <p class="text-sm font-medium mb-2">
-                        2. Navigate to your app
-                    </p>
-                    <TerminalCommand command="cd my-app" client:idle />
-                </div>
+                    <div>
+                        <div
+                            class="flex items-center gap-2 text-muted-foreground mb-2"
+                        >
+                            <span class="text-green-500">➜</span>
+                            <span>~</span>
+                            <span>Navigate to your app</span>
+                        </div>
+                        <TerminalCommand command="cd my-app" client:visible />
+                    </div>
 
-                <div>
-                    <p class="text-sm font-medium mb-2">
-                        3. Start the development server
-                    </p>
-                    <TerminalCommand command="npx expo start" client:idle />
+                    <div>
+                        <div
+                            class="flex items-center gap-2 text-muted-foreground mb-2"
+                        >
+                            <span class="text-green-500">➜</span>
+                            <span>~</span>
+                            <span>Start the development server</span>
+                        </div>
+                        <TerminalCommand
+                            command="npx expo start"
+                            client:visible
+                        />
+                    </div>
                 </div>
             </div>
 
