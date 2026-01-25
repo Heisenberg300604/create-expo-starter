@@ -1,0 +1,73 @@
+---
+import { Terminal, ListChecks, Rocket } from "lucide-react";
+
+const steps = [
+    {
+        icon: Terminal,
+        step: "01",
+        title: "Run one command",
+        description: "Just run npx init-expo-app my-app in your terminal.",
+        code: "npx init-expo-app my-app",
+    },
+    {
+        icon: ListChecks,
+        step: "02",
+        title: "Choose features",
+        description:
+            "Interactively select the features you need for your project.",
+    },
+    {
+        icon: Rocket,
+        step: "03",
+        title: "Start building",
+        description:
+            "Your production-ready app is ready. Focus on features, not setup.",
+    },
+];
+---
+
+<section class="py-20 lg:py-28 bg-secondary/30">
+    <div class="section-container">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-3">
+                Get started in seconds
+            </h2>
+            <p class="text-muted-foreground max-w-xl mx-auto">
+                Three steps. That's all it takes.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {
+                steps.map((step, index) => (
+                    <div class="relative">
+                        <div class="p-6 rounded-lg border border-border bg-card h-full">
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="text-3xl font-bold text-muted-foreground/30">
+                                    {step.step}
+                                </span>
+                                <div class="p-2 rounded-md bg-secondary">
+                                    <step.icon className="w-4 h-4" />
+                                </div>
+                            </div>
+                            <h3 class="font-semibold mb-2">{step.title}</h3>
+                            <p class="text-sm text-muted-foreground mb-4">
+                                {step.description}
+                            </p>
+                            {step.code && (
+                                <code class="text-xs font-mono bg-terminal text-terminal-foreground px-3 py-2 rounded block">
+                                    $ {step.code}
+                                </code>
+                            )}
+                        </div>
+
+                        {/* Connector line */}
+                        {index < steps.length - 1 && (
+                            <div class="hidden md:block absolute top-1/2 -right-3 lg:-right-4 w-6 lg:w-8 h-px bg-border" />
+                        )}
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

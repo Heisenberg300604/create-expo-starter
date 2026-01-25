@@ -1,19 +1,33 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/astro/Header.astro";
+import Hero from "../components/astro/Hero.astro";
+import SocialProof from "../components/astro/SocialProof.astro";
+import ProblemSolution from "../components/astro/ProblemSolution.astro";
+import Features from "../components/astro/Features.astro";
+import Architecture from "../components/astro/Architecture.astro";
+import HowItWorks from "../components/astro/HowItWorks.astro";
+import Audience from "../components/astro/Audience.astro";
+import QuickStart from "../components/astro/QuickStart.astro";
+import OpenSource from "../components/astro/OpenSource.astro";
+import Footer from "../components/astro/Footer.astro";
 import "../styles/global.css";
-import { Button } from "@/components/ui/button";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<Button>Click me</Button>
-	</body>
-</html>
+<BaseLayout>
+	<div class="min-h-screen bg-background">
+		<Header />
+		<main>
+			<Hero />
+			<SocialProof />
+			<ProblemSolution />
+			<Features />
+			<Architecture />
+			<HowItWorks />
+			<Audience />
+			<QuickStart />
+			<OpenSource />
+		</main>
+		<Footer />
+	</div>
+</BaseLayout>

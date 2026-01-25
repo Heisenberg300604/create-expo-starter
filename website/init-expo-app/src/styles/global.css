@@ -122,3 +122,64 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+
+  /* Section Container */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Navigation Links */
+  .nav-link {
+    @apply text-sm text-muted-foreground hover:text-foreground transition-colors;
+  }
+
+  /* Feature Card */
+  .feature-card {
+    @apply p-6 rounded-lg border border-border bg-card transition-shadow hover:shadow-md;
+  }
+
+  /* Code Block */
+  .code-block {
+    @apply bg-card border border-border rounded-lg p-6 font-mono;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-block px-2 py-1 text-xs font-medium rounded bg-primary text-primary-foreground;
+  }
+}
+
+/* Custom Colors */
+:root {
+  --terminal: oklch(0.15 0 0);
+  --terminal-foreground: oklch(0.55 0.15 140);
+  --success: oklch(0.65 0.18 142);
+  --code: oklch(0.95 0 0);
+}
+
+.dark {
+  --terminal: oklch(0.12 0 0);
+  --terminal-foreground: oklch(0.65 0.15 140);
+  --success: oklch(0.70 0.20 142);
+  --code: oklch(0.18 0 0);
+}
+
+/* Terminal Animation */
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}

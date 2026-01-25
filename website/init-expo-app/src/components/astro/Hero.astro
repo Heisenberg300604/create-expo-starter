@@ -1,0 +1,68 @@
+---
+import { Github, Package } from "lucide-react";
+import { TerminalCommand } from "../react/TerminalCommand";
+import { PhoneMockup } from "../react/PhoneMockup";
+---
+
+<section class="pt-32 pb-20 lg:pb-32">
+    <div class="section-container">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-6"
+                >
+                    <span class="w-1.5 h-1.5 rounded-full bg-success"></span>
+                    Open Source · Expo SDK 54
+                </div>
+
+                <h1
+                    class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4"
+                >
+                    Init Expo App
+                </h1>
+
+                <p class="text-lg sm:text-xl text-muted-foreground mb-2">
+                    The fastest way to bootstrap production-ready Expo React
+                    Native apps.
+                </p>
+
+                <p class="text-muted-foreground mb-8">
+                    Stop wasting hours on setup. Start building features in
+                    minutes.
+                </p>
+
+                <div class="space-y-4 mb-8">
+                    <TerminalCommand
+                        command="npx init-expo-app my-app"
+                        client:idle
+                    />
+                </div>
+
+                <div class="flex flex-wrap items-center gap-3">
+                    <a
+                        href="https://github.com/Heisenberg300604/init-expo-app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-medium hover:opacity-90 transition-opacity"
+                    >
+                        <Github className="w-4 h-4" />
+                        View on GitHub
+                    </a>
+                    <a
+                        href="https://npmjs.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 px-4 py-2 border border-border rounded-md text-sm font-medium hover:bg-secondary transition-colors"
+                    >
+                        <Package className="w-4 h-4" />
+                        NPM Package
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden lg:block">
+                <PhoneMockup client:visible />
+            </div>
+        </div>
+    </div>
+</section>

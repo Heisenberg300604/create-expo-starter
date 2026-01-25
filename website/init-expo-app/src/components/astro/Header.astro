@@ -1,0 +1,51 @@
+---
+import { Github, Package } from "lucide-react";
+import { ThemeToggle } from "../react/ThemeToggle";
+---
+
+<header
+    class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border"
+>
+    <div class="section-container">
+        <div class="flex items-center justify-between h-14">
+            <div class="flex items-center gap-2">
+                <div
+                    class="w-6 h-6 bg-foreground rounded-sm flex items-center justify-center"
+                >
+                    <span class="text-background font-mono text-xs font-bold"
+                        >ie</span
+                    >
+                </div>
+                <span class="font-semibold text-sm">init-expo-app</span>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#architecture" class="nav-link">Architecture</a>
+                <a href="#docs" class="nav-link">Docs</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <a
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="p-2 rounded-md hover:bg-secondary transition-colors"
+                    aria-label="GitHub"
+                >
+                    <Github className="w-4 h-4" />
+                </a>
+                <a
+                    href="https://npmjs.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="p-2 rounded-md hover:bg-secondary transition-colors"
+                    aria-label="NPM"
+                >
+                    <Package className="w-4 h-4" />
+                </a>
+                <ThemeToggle client:load />
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,73 @@
+---
+import { X, Check } from "lucide-react";
+
+const problems = [
+    "2–4 hours wasted on boilerplate setup",
+    "Repeating auth screens for every project",
+    "Manual NativeWind configuration",
+    "Inconsistent folder structure",
+    "State management setup from scratch",
+];
+
+const solutions = [
+    "30 seconds to start building",
+    "Pre-configured auth-ready screens",
+    "NativeWind v4 out of the box",
+    "Clean, scalable architecture",
+    "Zustand already integrated",
+];
+---
+
+<section class="py-20 lg:py-28">
+    <div class="section-container">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-3">
+                Stop reinventing the wheel
+            </h2>
+            <p class="text-muted-foreground max-w-xl mx-auto">
+                Every new Expo project shouldn't require the same repetitive
+                setup.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-12">
+            <div class="p-6 rounded-lg border border-border bg-card">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="p-1 rounded bg-destructive/10">
+                        <X className="w-4 h-4 text-destructive" />
+                    </div>
+                    <h3 class="font-semibold">Without Init Expo App</h3>
+                </div>
+                <ul class="space-y-3">
+                    {
+                        problems.map((problem) => (
+                            <li class="flex items-start gap-3 text-sm text-muted-foreground">
+                                <X className="w-4 h-4 text-destructive shrink-0 mt-0.5" />
+                                {problem}
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+
+            <div class="p-6 rounded-lg border border-success/30 bg-success/5">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="p-1 rounded bg-success/10">
+                        <Check className="w-4 h-4 text-success" />
+                    </div>
+                    <h3 class="font-semibold">With Init Expo App</h3>
+                </div>
+                <ul class="space-y-3">
+                    {
+                        solutions.map((solution) => (
+                            <li class="flex items-start gap-3 text-sm">
+                                <Check className="w-4 h-4 text-success shrink-0 mt-0.5" />
+                                {solution}
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

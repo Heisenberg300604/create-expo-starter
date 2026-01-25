@@ -1,0 +1,57 @@
+---
+import { TerminalCommand } from "../react/TerminalCommand";
+---
+
+<section id="docs" class="py-20 lg:py-28 bg-secondary/30">
+    <div class="section-container">
+        <div class="max-w-2xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-3">Quick start</h2>
+                <p class="text-muted-foreground">
+                    Get up and running in under a minute.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div>
+                    <p class="text-sm font-medium mb-2">1. Create a new app</p>
+                    <TerminalCommand
+                        command="npx init-expo-app my-app"
+                        client:idle
+                    />
+                </div>
+
+                <div>
+                    <p class="text-sm font-medium mb-2">
+                        2. Navigate to your app
+                    </p>
+                    <TerminalCommand command="cd my-app" client:idle />
+                </div>
+
+                <div>
+                    <p class="text-sm font-medium mb-2">
+                        3. Start the development server
+                    </p>
+                    <TerminalCommand command="npx expo start" client:idle />
+                </div>
+            </div>
+
+            <div class="mt-8 p-4 rounded-lg border border-border bg-card">
+                <p class="text-sm text-muted-foreground">
+                    <span class="font-medium text-foreground"
+                        >Need more info?</span
+                    >{" "}
+                    Check out the full documentation on{" "}
+                    <a
+                        href="https://github.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent hover:underline"
+                    >
+                        GitHub
+                    </a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

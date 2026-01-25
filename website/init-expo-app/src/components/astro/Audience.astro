@@ -1,0 +1,68 @@
+---
+import { Check, X } from "lucide-react";
+
+const perfectFor = [
+    "Indie developers shipping fast",
+    "Startups building MVPs",
+    "Hackathon participants",
+    "Freelancers starting new projects",
+    "React Native learners",
+];
+
+const notFor = [
+    "Heavily custom navigation needs",
+    "Non-Expo React Native apps",
+    "Brownfield integrations",
+    "Projects requiring bare workflow",
+];
+---
+
+<section class="py-20 lg:py-28">
+    <div class="section-container">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-3">
+                Is this for you?
+            </h2>
+            <p class="text-muted-foreground max-w-xl mx-auto">
+                We're transparent about what Init Expo App is—and isn't—designed
+                for.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div class="p-6 rounded-lg border border-success/30 bg-success/5">
+                <h3 class="font-semibold mb-4 flex items-center gap-2">
+                    <Check className="w-4 h-4 text-success" />
+                    Perfect for
+                </h3>
+                <ul class="space-y-2">
+                    {
+                        perfectFor.map((item) => (
+                            <li class="text-sm text-muted-foreground flex items-center gap-2">
+                                <Check className="w-3 h-3 text-success shrink-0" />
+                                {item}
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+
+            <div class="p-6 rounded-lg border border-border bg-card">
+                <h3 class="font-semibold mb-4 flex items-center gap-2">
+                    <X className="w-4 h-4 text-muted-foreground" />
+                    Not designed for
+                </h3>
+                <ul class="space-y-2">
+                    {
+                        notFor.map((item) => (
+                            <li class="text-sm text-muted-foreground flex items-center gap-2">
+                                <X className="w-3 h-3 text-muted-foreground shrink-0" />
+                                {item}
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

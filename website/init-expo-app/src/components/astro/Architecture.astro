@@ -1,0 +1,61 @@
+---
+const folderStructure = `my-app/
+├── app/
+│   ├── (tabs)/
+│   │   ├── _layout.tsx
+│   │   ├── index.tsx
+│   │   └── profile.tsx
+│   ├── auth/
+│   │   ├── login.tsx
+│   │   ├── register.tsx
+│   │   └── forgot-password.tsx
+│   ├── _layout.tsx
+│   └── +not-found.tsx
+├── components/
+│   ├── ui/
+│   │   ├── Button.tsx
+│   │   ├── Input.tsx
+│   │   └── Card.tsx
+│   └── common/
+│       └── Header.tsx
+├── hooks/
+│   ├── useAuth.ts
+│   └── useApi.ts
+├── lib/
+│   ├── api.ts
+│   ├── storage.ts
+│   └── utils.ts
+├── stores/
+│   ├── authStore.ts
+│   └── appStore.ts
+├── types/
+│   └── index.ts
+├── constants/
+│   └── index.ts
+├── app.config.ts
+├── tailwind.config.js
+└── package.json`;
+---
+
+<section id="architecture" class="py-20 lg:py-28">
+    <div class="section-container">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-3">
+                    Clean architecture
+                </h2>
+                <p class="text-muted-foreground">
+                    A scalable folder structure that grows with your project.
+                </p>
+            </div>
+
+            <div class="relative">
+                <pre
+                    class="code-block text-xs leading-relaxed overflow-x-auto"><code>{folderStructure}</code></pre>
+                <div class="absolute top-3 right-3">
+                    <span class="badge">TypeScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

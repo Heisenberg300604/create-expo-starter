@@ -1,0 +1,32 @@
+---
+import { Download, GitBranch, Zap, Users } from "lucide-react";
+
+const stats = [
+    { icon: Download, label: "200+ downloads", sublabel: "in first week" },
+    { icon: GitBranch, label: "Open Source", sublabel: "MIT License" },
+    { icon: Zap, label: "Expo SDK 52", sublabel: "Latest stable" },
+    { icon: Users, label: "Built for", sublabel: "indie devs & teams" },
+];
+---
+
+<section class="py-12 border-y border-border bg-secondary/30">
+    <div class="section-container">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            {
+                stats.map((stat) => (
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 rounded-md bg-background border border-border">
+                            <stat.icon className="w-4 h-4 text-muted-foreground" />
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium">{stat.label}</p>
+                            <p class="text-xs text-muted-foreground">
+                                {stat.sublabel}
+                            </p>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

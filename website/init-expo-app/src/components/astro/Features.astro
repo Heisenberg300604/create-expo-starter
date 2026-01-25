@@ -1,0 +1,108 @@
+---
+import {
+    Palette,
+    FolderTree,
+    Database,
+    Network,
+    Lock,
+    Settings,
+} from "lucide-react";
+
+const features = [
+    {
+        icon: Palette,
+        title: "NativeWind v4",
+        description:
+            "Tailwind CSS for React Native, pre-configured and ready to use.",
+        code: `<View className="flex-1 bg-white">
+  <Text className="text-lg font-bold">
+    Hello World
+  </Text>
+</View>`,
+    },
+    {
+        icon: FolderTree,
+        title: "Expo Router",
+        description:
+            "File-based routing with typed routes and deep linking support.",
+        code: `app/
+├── (tabs)/
+│   ├── index.tsx
+│   └── profile.tsx
+├── auth/
+│   └── login.tsx
+└── _layout.tsx`,
+    },
+    {
+        icon: Database,
+        title: "Zustand",
+        description: "Lightweight state management with persistence built-in.",
+        code: `const useStore = create((set) => ({
+  user: null,
+  setUser: (user) => set({ user }),
+}));`,
+    },
+    {
+        icon: Network,
+        title: "Axios Instance",
+        description:
+            "Pre-configured API layer with interceptors and error handling.",
+        code: `export const api = axios.create({
+  baseURL: API_URL,
+  timeout: 10000,
+});`,
+    },
+    {
+        icon: Lock,
+        title: "Auth-Ready Screens",
+        description:
+            "Login, register, and forgot password screens ready to connect.",
+    },
+    {
+        icon: Settings,
+        title: "Environment Variables",
+        description: "Expo's env system configured with TypeScript support.",
+        code: `// app.config.ts
+extra: {
+  apiUrl: process.env.API_URL,
+}`,
+    },
+];
+---
+
+<section id="features" class="py-20 lg:py-28 bg-secondary/30">
+    <div class="section-container">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-3">
+                Production-ready from day one
+            </h2>
+            <p class="text-muted-foreground max-w-xl mx-auto">
+                Everything you need to build and ship a React Native app,
+                already configured.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {
+                features.map((feature) => (
+                    <div class="feature-card">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="p-2 rounded-md bg-secondary">
+                                <feature.icon className="w-4 h-4" />
+                            </div>
+                            <h3 class="font-semibold">{feature.title}</h3>
+                        </div>
+                        <p class="text-sm text-muted-foreground mb-4">
+                            {feature.description}
+                        </p>
+                        {feature.code && (
+                            <pre class="text-xs font-mono bg-code p-3 rounded-md overflow-x-auto text-muted-foreground">
+                                {feature.code}
+                            </pre>
+                        )}
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
