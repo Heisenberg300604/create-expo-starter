@@ -10,6 +10,7 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+import Analytics from "@vercel/analytics/astro";
 ---
 
 <!doctype html>
@@ -90,6 +91,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
             window.localStorage.setItem("theme", theme);
         </script>
+        <Analytics />
     </head>
     <body>
         <slot />
