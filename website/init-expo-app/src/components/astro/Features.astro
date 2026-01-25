@@ -87,7 +87,7 @@ extra: {
             </p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {
                 features.map((feature) => (
                     <div class="feature-card">
@@ -101,7 +101,7 @@ extra: {
                             {feature.description}
                         </p>
                         {feature.code && (
-                            <pre class="text-xs font-mono bg-code p-3 rounded-md overflow-x-auto text-muted-foreground">
+                            <pre class="text-xs font-mono bg-code p-3 rounded-md overflow-x-auto text-muted-foreground max-w-full whitespace-pre-wrap break-words sm:whitespace-pre sm:break-normal">
                                 {feature.code}
                             </pre>
                         )}

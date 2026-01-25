@@ -13,7 +13,7 @@ import { TerminalCommand } from "../react/TerminalCommand";
             </div>
 
             <div
-                class="w-full max-w-2xl mx-auto border border-border bg-[#0c0c0c] rounded-xl overflow-hidden shadow-2xl"
+                class="w-full sm:max-w-2xl mx-auto border border-border bg-[#0c0c0c] rounded-xl overflow-hidden shadow-2xl"
             >
                 <div
                     class="border-b border-white/10 bg-[#1a1a1a] p-4 flex items-center"
@@ -27,7 +27,9 @@ import { TerminalCommand } from "../react/TerminalCommand";
                         bash — 80x24
                     </div>
                 </div>
-                <div class="p-6 space-y-8 font-mono text-sm">
+                <div
+                    class="p-4 sm:p-6 space-y-6 sm:space-y-8 font-mono text-xs sm:text-sm"
+                >
                     <div>
                         <div
                             class="flex items-center gap-2 text-muted-foreground mb-2"
@@ -76,10 +78,10 @@ import { TerminalCommand } from "../react/TerminalCommand";
                     >{" "}
                     Check out the full documentation on{" "}
                     <a
-                        href="https://github.com"
+                        href="https://github.com/Heisenberg300604/init-expo-app"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-accent hover:underline"
+                        class="text-accent hover:underline text-foreground"
                     >
                         GitHub
                     </a>.
